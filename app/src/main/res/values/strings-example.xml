@@ -1,0 +1,8 @@
+<!-- IMPORTANT!!: 
+    rename this to strings.xml and add your client 
+    in 'default_web_client_id' string
+ -->
+<resources>
+    <string name="app_name">convoai</string>
+    <string name="default_web_client_id">YOUR-CLIENT-ID-HERE</string>
+</resources>
