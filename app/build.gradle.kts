@@ -59,5 +59,10 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-database")
 
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+    implementation("org.commonmark:commonmark:0.18.2")
+    implementation("org.commonmark:commonmark-ext-gfm-tables:0.18.2")
+    implementation("org.commonmark:commonmark-ext-autolink:0.18.2")
 
 }

@@ -14,7 +14,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
@@ -34,11 +33,11 @@ import java.util.HashMap;
 public class MainActivity extends AppCompatActivity {
 
     Button google_auth_btn;
+    Button google_signin_btn;
     FirebaseAuth firebaseAuth;
     FirebaseDatabase database;
 
     GoogleSignInOptions gso;
-
     GoogleSignInClient gsc;
 
     int RC_SIGN_IN = 20;
@@ -55,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         google_auth_btn = findViewById(R.id.google_auth_btn);
+        google_signin_btn = findViewById(R.id.google_login_btn);
         firebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
@@ -71,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        google_signin_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signIn();
+            }
+        });
     }
 
     private void signIn() {
@@ -107,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                             map.put("email", user.getEmail());
                             map.put("photo", user.getPhotoUrl().toString());
                             database.getReference().child("Users").child(user.getUid()).setValue(map);
-                            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            Intent intent = new Intent(MainActivity.this, ChatActivity.class);
                             startActivity(intent);
                         } else {
                             Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
