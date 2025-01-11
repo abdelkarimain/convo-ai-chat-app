@@ -13,8 +13,13 @@
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">convoai</string>
-    <string name="default_web_client_id">YOUR-CLIENT-ID-HERE</string>
+    <string name="app_name">ConvoAI</string>
+    <string name="app_logo">app logo</string>
+    <string name="app_desc">Using this software,you can ask you questions and receive articles using artificial intelligence assistant</string>
+    <string name="hello_blank_fragment">Hello</string>
+
+    <!-- IMPORTENT -->
+    <string name="default_web_client_id">YOUR_FIREBASE_CLIENT_ID</string>
     <string name="gemini_api_key">YOUR_GEMINI_API_KEY</string>
 </resources>
 ```

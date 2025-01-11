@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Theme colors -->
+    <color name="primary">#7E57C2</color>
+    <color name="primary_variant">#6A3131</color>
+    <color name="secondary">#6C6570</color>
+    <color name="tertiary">#8B6267</color>
+    <color name="error">#CF4545</color>
+    
+    <!-- Background colors -->
+    <color name="background">#F5F7FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#1E232C</color>
+    <color name="text_secondary">#666666</color>
+    
+    <!-- Custom gradients - start, center, end -->
+    <color name="gradient_start">#EAC2B4</color>
+    <color name="gradient_center">#C198E1</color>
+    <color name="gradient_end">#DC8DDC</color>
+    
+    <!-- AI Text Colors -->
+    <color name="ai_text_color">#3369FF</color>
+    
+    <!-- AI Theme Colors -->
+    <color name="ai_gradient_start">#EAC2B4</color>
+    <color name="ai_gradient_middle">#C198E1</color>
+    <color name="ai_gradient_end">#DC8DDC</color>
+    <color name="ai_edit_text_bg">#F5F5F5</color>
+    <color name="ai_edit_text_stroke">#E0E0E0</color>
+    
+    <!-- Additional Colors -->
+    <color name="dark">#1E232C</color>
+    <color name="teal_200">#FF03DAC5</color>
 </resources>

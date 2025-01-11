@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme colors - dark -->
+    <color name="primary">#D4BAFF</color>
+    <color name="primary_variant">#8B4545</color>
+    <color name="secondary">#D3CED6</color>
+    <color name="tertiary">#EFCDD2</color>
+    <color name="error">#FFCDC8</color>
+    
+    <!-- Background colors - dark -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_variant">#2D2D2D</color>
+    
+    <!-- Text colors - dark -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    
+    <!-- AI Text Colors -->
+    <color name="ai_text_color">#82A4FF</color>
+    
+    <!-- AI Theme Colors - Dark -->
+    <color name="ai_gradient_start">#4A3F68</color>
+    <color name="ai_gradient_middle">#584B7C</color>
+    <color name="ai_gradient_end">#6B5890</color>
+    <color name="ai_edit_text_bg">#2D2D2D</color>
+    <color name="ai_edit_text_stroke">#404040</color>
+    
+    <!-- Additional Colors - Dark -->
+    <color name="dark">#FFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+</resources>
