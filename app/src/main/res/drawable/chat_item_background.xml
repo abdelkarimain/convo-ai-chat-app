@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <gradient
-                android:type="linear"
-                android:startColor="@color/gradient_start"
-                android:centerColor="@color/gradient_center"
-                android:endColor="@color/gradient_end"
-                android:angle="0" />
+            <solid android:color="@color/msg_ai" />
             <corners android:radius="10dp" />
         </shape>
     </item>
-
     <item>
         <shape android:shape="rectangle">
-            <gradient
-                android:type="linear"
-                android:startColor="#EAC2B4"
-                android:centerColor="#C198E1"
-                android:endColor="#DC8DDC"
-                android:angle="0" />
+            <solid android:color="@color/msg_ai" />
             <corners android:radius="10dp" />
         </shape>
     </item>
-
 </selector>

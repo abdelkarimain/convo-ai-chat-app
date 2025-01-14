@@ -39,28 +39,32 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
-    implementation("com.google.firebase:firebase-firestore:25.1.1")
-    implementation("com.google.firebase:firebase-database:21.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    implementation ("androidx.recyclerview:recyclerview:1.3.0")
 
-
-    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
-
-    implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-auth")
-
+    // Glide for image loading
     implementation("com.github.bumptech.glide:glide:4.14.2")
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
 
-
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore:25.1.1")
+    implementation("com.google.firebase:firebase-database:21.0.0")
+    implementation("com.google.firebase:firebase-storage")
     //for auth with google
     implementation("com.google.android.gms:play-services-auth:20.5.0")
     implementation("com.google.android.gms:play-services-base:18.2.0")
-    implementation("com.google.firebase:firebase-storage")
 
+    // for api calls
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+    // Lottie for animations
+    implementation("com.airbnb.android:lottie:6.0.0")
+
     // Updated Markwon dependencies
     implementation("io.noties.markwon:core:4.6.2")
     implementation("io.noties.markwon:html:4.6.2")
@@ -68,13 +72,4 @@ dependencies {
     implementation("io.noties.markwon:ext-tables:4.6.2")
     implementation("io.noties.markwon:ext-strikethrough:4.6.2")
     implementation("io.noties.markwon:ext-tasklist:4.6.2")
-
-    implementation ("androidx.recyclerview:recyclerview:1.3.0")
-
-    implementation("com.airbnb.android:lottie:6.0.0")
-
-    // Remove Prism4j dependencies as they're not needed for basic markdown
-    // implementation("io.noties.prism4j:prism4j:2.1.0")
-    // annotationProcessor("io.noties.prism4j:prism4j-bundler:2.1.0")
-
 }

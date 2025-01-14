@@ -129,7 +129,9 @@ public class ProfileFragment extends Fragment {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             tvUsername.setText(displayName);
-                            Toast.makeText(getContext(), "Profile updated successfully", Toast.LENGTH_SHORT).show();
+                            if (isAdded()) {
+                                Toast.makeText(getContext(), "Profile updated successfully", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
         }

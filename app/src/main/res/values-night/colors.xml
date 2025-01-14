@@ -29,4 +29,8 @@
     <!-- Additional Colors - Dark -->
     <color name="dark">#FFFFFF</color>
     <color name="teal_200">#FF03DAC5</color>
+
+    <!-- chat colors -->
+    <color name="msg_ai">#1BA3D2</color>
+    <color name="msg_user">#4CC794</color>
 </resources>
